@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Converso de Medidas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/converso.css">
+	<script type="text/javascript" src="js/con_medida.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="fundo">
+		<figure>
+			<center><img src="imagens/2.jpg"></center>
+		</figure>
+	</div>
+
+
+	<div id="objetivo">
+		<section>
+			<h2>Introdução</h2>
+			<P>A conversão de medidas é importante para resolver questões de matemática, assim como de física. Quando um problema apresenta diferentes unidades de medida, a conversão é necessária para solucionar a questão. As unidades de medidas estão presentes no nosso cotidiano.</P>
+			<p>Repare que muitas vezes vemos escrito nas caçambas espalhadas pelas ruas “5 m³” ou, no final dos rótulos de xampus, “100 ml”. E até mesmo o bonito piso que gostaríamos de ter em nossas casas é vendido pelo “metro quadrado”. Mas, afinal, o que significam essas medidas? Para facilitar, iremos tomar como base a unidade de comprimento: metro.</p>
+
+			<h2>UNIDADES DE COMPRIMENTO</h2>
+
+			<p>Ao medirmos a altura de uma pessoa, usamos a unidade conhecida como “metro”: 1,60m, 1,83m etc. Mas seria muito difícil se usássemos a mesma unidade para calcular a distância entre cidades ou países, pois são longas distâncias, ou seja, números que podem ser muito grandes. Teríamos dificuldade também ao escrever a espessura de um fio de cabelo ou a tampa de uma caneta: pequenas distâncias, pequenos números.</p>
+			<p>Logo, para resolver esse problema, criou-se uma convenção para as unidades de comprimento. Do maior ao menor: quilômetro, hectômetro, decâmetro, metro, decímetro, centímetro e milímetro. Seus símbolos são respectivamente: km, hm, dam, m, dm, cm, mm.</P>
+				<center><img class="foto" src="imagens/uni_medida.jpg"></center>
+			<p>Para converter unidade de medida de comprimento para outra unidade de medida de comprimento inferior basta multiplicar pro 10 ate que chegue a unidade de medida de comprimento desejada.</p>
+          	<p>E para converter uma unidade de medida para outra unidade de medida superior basta dividir por 10 ate alcançar a unidade solicitada.</p>
+
+			<form name="metro">
+				Metro
+            	<input type="text" name="m">
+            		<select id='opcao' name="medida">Medida
+              			<option value='km'>Kilometro</option>
+				        <option value='hm'>Hecometro</option>
+				        <option value='dam'>Decometro</option>
+				        <option value='dc'>Decimetro</option>
+				        <option value='cm'>Centimetro</option>
+				        <option value='mm'>Milimetro</option>
+				    </select>
+				Resultado:
+            	<input type="text" id="result2" disabled="">
+           		<input type="button" name="enviar" onclick="me()" value="calcular"  >
+          	</form>
+
+		</section>
+	</div>
+	<a href="home.html" class="botao">voltar</a>
+</body>
+</html>

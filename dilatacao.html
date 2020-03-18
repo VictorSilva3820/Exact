@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Dilatação Termica</title>
+	<link rel="stylesheet" type="text/css" href="css/dilatacao.css">
+	<script type="text/javascript" src="js/dilatacao.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body background="">
+	<div class="fundo">
+		<figure>
+			<center><img src="imagens/2.jpg"></center>
+		</figure>
+	</div>
+
+	<div id="objetivo">
+		<section>
+			<h2>Introdução</h2>
+			<p>Dilatação térmica é o nome que se dá ao aumento do volume de um corpo ocasionado pelo aumento de sua temperatura, o que causa o aumento no grau de agitação de suas moléculas e consequentemente aumento na distância média entre as mesmas. A dilatação ocorre de forma mais significativa nos gases, de forma intermediária nos líquidos e de forma menos explícita nos sólidos. A dilatação térmica dividi-se em três tipos sendo eles:</p>
+			
+			<h2>Dilatação linear</h2>
+			<p>A dilatação linear leva em consideração a dilatação sofrida por um corpo apenas em uma das suas dimensões. É o que acontece, por exemplo, com um fio, em que o seu comprimento é mais relevante do que a sua espessura.</p>
+
+			<p>Para calcular a dilatação linear utilizamos a seguinte fórmula:</p>
+			<p class="par">ΔL = L0.α.Δθ   Onde,</p>		
+
+			<p>ΔL: Variação do comprimento (m ou cm)<br>L0: Comprimento inicial (m ou cm)<br>α: Coeficiente de dilatação linear (ºC-1)<br>Δθ: Variação de temperatura (ºC)
+
+
+				<form name="linear">
+					L0:<input type="text" name="cil" placeholder="0">
+           			α:<input type="text" name="cdl" placeholder="0">
+            		Δθ:<input type="text" name="vtl" placeholder="0">
+            		ΔL:<input type="text" id="deltaL" disabled="" placeholder="0">
+            		<input type="button" id="calcula" value="calcular" onclick="Linear()">
+				</form>
+
+			<h2>Dilatação Superficial</h2>		
+			<p>A dilatação superficial leva em consideração a dilatação sofrida por uma determinada superfície. É o que acontece, por exemplo, com uma chapa de metal delgada.</p>			
+			<p>Para calcular a dilatação superficial utilizamos a seguinte fórmula:</p>
+			<p class="par">ΔA = A0.β.Δθ   Onde,</p>
+			
+			<p>ΔA: Variação da área (m2 ou cm2)<br>A0: Área inicial (m2 ou cm2)<br>β: Coeficiente de dilatação superficial (ºC-1)<br>Δθ: Variação de temperatura (ºC)</p>
+			
+			<p>Importa destacar que o coeficiente de dilatação superficial (β) é igual a duas vezes o valor do coeficiente de dilatação linear (α), ou seja: β = 2 . α</p>
+
+				<form name="super">
+					A0:<input type="text" name="cis" placeholder="0">
+           			β:<input type="text" name="cds" placeholder="0">
+            		Δθ:<input type="text" name="vts" placeholder="0">
+            		ΔA:<input type="text" id="superficial" disabled="" placeholder="0">
+            		<input type="button" value="calcular" onclick="Superficial()">
+				</form>
+	
+			<h2>Dilatação Volumétrica</h2>
+			
+			<p>A dilatação volumétrica resulta do aumento no volume de um corpo, o que acontece, por exemplo, com uma barra de ouro.</p>
+			
+			<p>Para calcular a dilatação volumétrica utilizamos a seguinte fórmula:</p>
+			<p class="par">ΔV = V0.γ.Δθ   Onde,</p>
+	
+			<p>ΔV: Variação do volume (m3 ou cm3)<br>V0: Volume inicial (m3 ou cm3)<br>γ: Coeficiente de dilatação volumétrica (ºC-1)<br>Δθ: Variação de temperatura (ºC)</p>
+
+			<p>Repare que o coeficiente de dilatação volumétrico (γ) é três vezes maior que coeficiente de dilatação linear (α), ou seja: γ = 3 . α</p>
+
+				<form name="volu">
+					V0:<input type="text" name="civ" placeholder="0">
+           			γ:<input type="text" name="cdv" placeholder="0">
+            		Δθ:<input type="text" name="vtv" placeholder="0">
+            		ΔV:<input type="text" id="volumetrica" disabled="" placeholder="0">
+            		<input type="button" value="calcular" onclick="Volumetrica()">
+				</form>
+		</section>
+	</div>
+	<a href="home.html" class="botao">voltar</a>
+
+</body>
+</html>

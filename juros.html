@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Juros Composto</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/juros.css">
+	<script type="text/javascript" src="js/media_juros.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="fundo">
+		<figure>
+			<center><img src="imagens/2.jpg"></center>
+		</figure>
+	</div>
+
+
+	<div id="objetivo">
+		<section>
+			<div class="media">
+            <h2>Introdução </h2>
+            <p>O juro é a remuneração pelo empréstimo do dinheiro. Ele existe porque a maioria das pessoas prefere o consumo imediato, e está disposta a pagar um preço por isto. Por outro lado, quem for capaz de esperar até possuir a quantia suficiente para adquirir seu desejo, e neste ínterim estiver disposta a emprestar esta quantia a alguém, menos paciente, deve ser recompensado por esta abstinência na proporção do tempo e risco, que a operação envolver.</p>
+			<p>Ele representam a remuneração do Capital empregado em alguma atividade produtiva. Os juros podem ser capitalizados segundo dois regimes: simples ou compostos. Aqui você verá como calcular o juros composto</p>
+
+			<h2>Juros Composto</h2>
+			<p>Juros compostos: o juro de cada intervalo de tempo é calculado a partir do saldo no início de correspondente intervalo. Ou seja: o juro de cada intervalo de tempo é incorporado ao capital inicial e passa a render juros também.</p>
+			<p>A maioria das operações envolvendo dinheiro utiliza juros compostos. Estão incluídas: compras a médio e longo prazo, compras com cartão de crédito, empréstimos bancários, as aplicações financeiras usuais como Caderneta de Poupança e aplicações em fundos de renda fixa, etc.</p>
+			<p>Para calcular o juros composto utiliza-se a seguinte fórmula:  J = C.i .t,  onde<br>J: juros<br>C: capital<br>i = taxa de juros<br>t: tempo.</p>
+
+            <form name="jurosC">
+            	C : <input type="text" name="prin">
+            	i : <input type="text" name="taxa">
+            	T : <input type="text" name="periodo">
+            	J : <input type="text" id="juros" disabled="">
+            	<input type="button" name="enviar" id="calcula" onclick="Juros()" value="calcular">
+            </form>
+          </div>
+
+		</section>
+	</div>
+	<a href="home.html" class="botao">voltar</a>
+</body>
+</html>

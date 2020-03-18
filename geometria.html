@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Geometria</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/geometria.css">
+	<script type="text/javascript" src="js/areas.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="fundo">
+		<figure>
+			<center><img src="imagens/2.jpg"></center>
+		</figure>
+	</div>
+
+	<div id="objetivo">
+		<section>
+			<h2>Introdução</h2>
+			<P>A Geometria é o estudo das formas dos objetos presentes na natureza, das posições ocupadas por esses objetos, das relações e das propriedades relativas a essas formas.</P>
+			<p>A geometria também é responsável por propriedades das figuras geométricas. Essas propriedades nada mais são do que resultados de relações analisadas nos objetos e figuras geométricas. Uma propriedade das circunferências, por exemplo, é a seguinte: o resultado da divisão entre o perímetro de um círculo e seu diâmetro sempre será igual a π (aproximadamente 3,14).</p>
+			<p>Neste site nos abordaremos o calculo da área de figuras planas pertencentes a geometria plana, mas o que geometria plana? É simples, todas as figuras, formas e definições são feitas para objetos pertencentes ao plano, isto é, que possuem apenas largura e comprimento, mas não possuem profundidade.</p>
+
+			<h2>AREA DO RETANGULO</h2>
+          	<p>A área do retângulo corresponde ao produto da medida da base pela altura da figura, sendo expressa pela fórmula:<br>A = b.h  Onde,</p>
+          	<p>A: área<br>b: base<br>h: altura</p>
+          	<center><img class="imagem" src="imagens/retangulo.jpg"></center>
+
+          	<form name="retangulo">
+	            b : <input type="text" name="b">
+	            h : <input type="text" name="h">
+	            A : <input type="text" id="Aret" disabled="">
+	            <input type="button" name="" onclick="Retangulo()" value="calcular">
+          	</form>
+
+          	<h2>AREA DO QUADRADO</h2>
+          	<p>Para calcular a área do quadrado, basta multiplicar a medida de dois lados (l) dessa figura. Muitas vezes os lados são chamados de base (b) e altura (h). No quadrado a base é igual à altura (b=h). Logo, temos a fórmula da área:</p>
+          	<p>A = L.L  ou  A = b.h</p>
+          	<center><img class="imagem" src="imagens/quadrado.jpg"></center>
+
+          	<form name="quadrado">
+	            L :<input type="text" name="lado">
+	            A :<input type="text" id="Aqua" disabled="">
+	            <input type="button" name="" onclick="Quadrado()" value="calcular">
+          	</form>
+
+          	<h2>AREA TRIANGULO</h2>
+	        <p>Na maioria das situações, usamos as medidas da base e da altura de um triângulo para calcular a sua área. Considere o triângulo representado abaixo, sua área será calculada, usando a seguinte fórmula: A = (b.h)/2</p>
+	        <p>Área: área do triângulo<br>b: base<br>h:altura</p>
+	        <center><img class="imagem" src="imagens/triangulo.jpg"></center>
+
+	        <form name="triangulo">
+	        	b :<input type="text" name="b">
+	       		h :<input type="text" name="h">
+	        	A :<input type="text" id="Atri" disabled="">
+	        	<input type="button" name="" onclick="Triangulo()" value="calcular">
+	        </form>
+
+	        <h2>AREA DE UM TRAPEZIO</h2>
+          	<p>A área do trapézio mede o valor da superfície dessa figura plana formada por quatro lados. O trapézio é um quadrilátero que possui dois lados e duas bases paralelas, sendo que uma é maior e outra menor. O trapézio é considerado um quadrilátero notável, de forma que a soma de seus ângulos internos corresponde a 360°. Para calcular a área do trapézio utilizamos a seguinte fórmula: A = (B*b/2) .h,  onde:</p>          
+	        <p>A: área da figura<br>B: base maior<br>b: base menor<br>h: altura</p>
+	        <center><img class="imagem" src="imagens/trapezio.jpg"></center>
+
+	        <form name="trapezio">
+	            B :<input type="text" name="B">
+	            b :<input type="text" name="b">
+	            h :<input type="text" name="h">
+	            A :<input type="text" id="Atrap" disabled="">
+	            <input type="button" name="" onclick="Trapezio()" value="calcular">
+	        </form>
+
+		</section>
+	</div>
+	<a href="home.html" class="botao">voltar</a>
+
+</body>
+</html>
